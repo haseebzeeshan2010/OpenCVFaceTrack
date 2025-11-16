@@ -1,8 +1,7 @@
 import cv2
 
 capture = cv2.VideoCapture("WIN_20251115_18_36_28_Pro.mp4")
-model = cv2.CascadeClassifier(
-    cv2.data.haarcascades + 'haarcascade_frontalface_alt2.xml')
+model = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_alt2.xml')
 
 while True:
     captured, frame = capture.read()
