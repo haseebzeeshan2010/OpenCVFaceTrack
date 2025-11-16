@@ -1,10 +1,14 @@
 import numpy as np
 import cv2 as cv
- 
+# Setup Video Capture
 cap = cv.VideoCapture("WIN_20251115_18_36_28_Pro.mp4")
+
+#Check if video opened successfully
 if not cap.isOpened():
     print("Cannot open camera")
     exit()
+
+# Read until video is completed
 while True:
     # Capture frame-by-frame
     ret, frame = cap.read()
